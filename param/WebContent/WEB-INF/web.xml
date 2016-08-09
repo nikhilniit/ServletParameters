@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+  <servlet>
+    
+    <init-param>
+      <param-name>driver</param-name>
+      <param-value>com.mysql.jdbc.Driver</param-value>
+    </init-param>
+    <init-param>
+      <param-name>url</param-name>
+      <param-value>jdbc:mysql://localhost:3306/nikhil?useSSL=false</param-value>
+    </init-param>
+    <init-param>
+      <param-name>username</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <init-param>
+      <param-name>password</param-name>
+      <param-value>root</param-value>
+    </init-param>
+    <servlet-name>ParamServ</servlet-name>
+    <servlet-class>ParamServ</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ParamServ</servlet-name>
+    <url-pattern>/ParamServ</url-pattern>
+  </servlet-mapping>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
